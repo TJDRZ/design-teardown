@@ -5,3 +5,4 @@ Inspired by and used: https://www.smashingmagazine.com/ 's homepage to create a 
 Main Objectives:
 
 - Create a grayscale heat map of the website that indicates which elements have the greatest weight in the visual hierarchy
+- Add some typography
