@@ -4,83 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/grayscale.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/site-header.css">
+    <link rel="stylesheet" href="./styles/topic-header.css">
+    <link rel="stylesheet" href="./styles/main-landmark.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>Design Teardown</title>
 </head>
 <body>
-    <header id="site-header">
-        <h1 id="site-logo"></h1>
-        <nav id="site-nav"></nav>
-        <form id="search"></form>
+    <header class="medium" id="site-header">
+        <h1 id="site-logo">
+            <img src="assets/logo.svg" alt="">
+        </h1>
+        <nav id="site-nav">
+            <ul>
+                <li>
+                    <a href="#">Articles</a>
+                </li>
+                <li>
+                    <a href="#">Guides</a>
+                </li>
+                <li>
+                    <a href="#">Books</a>
+                </li>
+                <li>
+                    <a href="#">Workshops</a>
+                </li>
+                <li>
+                    <a href="#">Membership</a>
+                </li>
+                <li>
+                    <a href="#">Job Board</a>
+                </li>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">More</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="high" id="search">
+            <label for="search"><img id="search-img" src="./assets/search.svg" alt=""></label>
+            <input class="high" id="search-input" name="search" type="text" placeholder="Search articles..."> 
+        </form>
     </header>
-    <header id="topic-header">
-        <nav id="topic-nav"></nav>
+    <header class="low" id="topic-header">
+        <nav id="topic-nav">
+            <ul>
+                <li>
+                    <a href="#">Accessibility</a>
+                </li>
+                <li>
+                    <a href="#">CSS</a>
+                </li>
+                <li>
+                    <a href="#">JavaScript</a>
+                </li>
+                <li>
+                    <a href="#">React</a>
+                </li>
+                <li>
+                    <a href="#">Vue</a>
+                </li>
+                <li>
+                    <a href="#">Round-Ups</a>
+                </li>
+                <li>
+                    <a href="#">UX</a>
+                </li>
+                <li>
+                    <a href="#">Design</a>
+                </li>
+                <li>
+                    <a href="#">Web Design</a>
+                </li>
+                <li>
+                    <a href="#">Figma</a>
+                </li>
+                <li>
+                    <a href="#">Wallpapers</a>
+                </li>
+                <li>
+                    <a href="#">Guides</a>
+                </li>
+                <li>
+                    <a href="#">Business</a>
+                </li>
+                <li>
+                    <a href="#">Career</a>
+                </li>
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Jump to all articles</a>
+                </li> 
+            </ul>
+        </nav>
     </header>
-    <main id="main">
+    <main class="high" id="main">
         <section id="headline-content">
             <section class="article-section">
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="medium article">Velit senserit sit ei. Iudico minimum ex duo, ne vix recusabo complectitur. Ut populo consulatu persecuti vel, nec convenire euripidis ad. At ubique delicata pri. Nam tota lucilius ad.</article>
+                <article class="medium article">In cum enim bonorum. An qui quis labitur salutatus. Mea timeam labores deserunt in, nec no partem nominati. Ut dolores recusabo sea.</article>
             </section>
-            <aside id="email-newsletter"></aside>
+            <aside id="email-newsletter">Quem tollit fastidii id sea. Cibo copiosae definitiones cu cum. Est animal adolescens id, ei ceteros cotidieque quo, te prima decore deleniti cum. Omittam voluptaria per in. Inani convenire constituto has an, te vix nihil euismod erroribus, cu qui maiorum vivendum posidonium. Enim erant tation te qui, cum id eleifend definitiones.</aside>
             <section class="guide-section">
-                <article class="guide"></article>
-                <article class="guide"></article>
-                <article class="guide"></article>
+                <article class="guide">Pro neglegentur instructior et. Te accumsan pertinax neglegentur pro. Te nibh quas sadipscing sed. Nam quas instructior ea, eum veri noster eu, sed movet iusto doctus et.</article>
+                <article class="guide">Te quot lorem facete vim. Sit posse ullum audire ea, sea prima facilisi id, at sit soleat appareat insolens. Nam munere aliquip albucius eu. Paulo omnesque vis ea, brute noster ne eam.</article>
+                <article class="guide">Alterum rationibus eos ei. Per ut ponderum torquatos, eum aeterno nominavi ei. Eu pericula inciderint eos, inermis admodum repudiare ex eum. Duo ex purto officiis. Cibo facilis blandit te duo.</article>
                 <a class="more-guides-anchor" href="#"></a>
             </section>
         </section>
-        <section class="secondary-articles">
+        <section class="medium secondary-articles">
             <section class="article-section">
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <a class="more-articles" href="#"></a>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
             </section>
         </section>
         <section id="smashing-family">
-            <header id="smashing-header">
-                <h2 id="smashing-h2"></h2>
-                <p id="smashing-slogan"></p>
-            </header>
+            <header id="smashing-header">That's the Smashing Family</header>
             <section id="smashing-cards">
-                <article class="smashing-card"></article>
-                <article class="smashing-card"></article>
-                <article class="smashing-card"></article>
-                <article class="smashing-card"></article>
-                <article class="smashing-card"></article>
+                <article class="smashing-card">Per dicam possit incorrupte ei, duis theophrastus et eum. Vis graeci nominati te, at vix probatus scripserit concludaturque. Cu vel dolorem menandri electram. Iusto solet duo ut. Ne fuisset invidunt honestatis pro. An mea wisi probatus, et his fabulas similique definiebas.</article>
+                <article class="smashing-card">Per dicam possit incorrupte ei, duis theophrastus et eum. Vis graeci nominati te, at vix probatus scripserit concludaturque. Cu vel dolorem menandri electram. Iusto solet duo ut. Ne fuisset invidunt honestatis pro. An mea wisi probatus, et his fabulas similique definiebas.</article>
+                <article class="smashing-card">Per dicam possit incorrupte ei, duis theophrastus et eum. Vis graeci nominati te, at vix probatus scripserit concludaturque. Cu vel dolorem menandri electram. Iusto solet duo ut. Ne fuisset invidunt honestatis pro. An mea wisi probatus, et his fabulas similique definiebas.</article>
+                <article class="smashing-card">Per dicam possit incorrupte ei, duis theophrastus et eum. Vis graeci nominati te, at vix probatus scripserit concludaturque. Cu vel dolorem menandri electram. Iusto solet duo ut. Ne fuisset invidunt honestatis pro. An mea wisi probatus, et his fabulas similique definiebas.</article>
+                <article class="smashing-card">Per dicam possit incorrupte ei, duis theophrastus et eum. Vis graeci nominati te, at vix probatus scripserit concludaturque. Cu vel dolorem menandri electram. Iusto solet duo ut. Ne fuisset invidunt honestatis pro. An mea wisi probatus, et his fabulas similique definiebas.</article>
             </section>
         </section>
         <section id="conferences">
-            <time id="conference-dates"></time>
-            <h2 id="conference-headline"></h2>
-            <p id="conference-p"></p>
-            <button id="conference-browse"></button>
-            <img id="conference=img" src="#" alt="">
+            Lorem ipsum dolor sit amet, error saepe regione nam et, per eirmod singulis legendos ex, vel et mutat docendi. At usu utinam erroribus, vim numquam accommodare ullamcorper an, an quaestio prodesset deterruisset vix. At regione accusam eam, ea qui epicuri consulatu. Vel eius lorem eirmod ut, accusam indoctum eu usu. Sea tale solet ut. Labores consequuntur eos in, eu vix summo neglegentur.
+
+            Modo graeci mnesarchum eam ad, munere probatus pri no. Ex ius dicit recusabo consequat, periculis ocurreret sadipscing ne eos, ut per quis legere tempor. Est percipitur concludaturque no, ad quaeque dissentiet has, his vidit delicatissimi an. Agam facer vix ea, cum insolens inimicus ea, id affert nominavi definitiones vel. Pro mutat impetus suscipiantur at, mea ut amet tibique, te ceteros referrentur contentiones per. Et tale purto pro, ius quot consetetur ad.
+            
+            Per error quaestio et, ut mea unum argumentum ullamcorper. Omittam oportere in vel. Bonorum quaestio an eum. At quo discere definiebas argumentum. Vim esse adhuc volumus te, sea convenire aliquando conceptam an. Accumsan adipisci corrumpit per ei.
         </section>
-        <section class="secondary-articles">
-            <header id="weekly-person">
-                <h2 id="weekly-h2"></h2>
-                <article id="weekly-article"></article>
+        <section class="medium secondary-articles">
+            <header class="high" id="weekly-person">
+                <article id="weekly-article">No aeque impedit reprimique nam, mutat justo eu mei. Sea ad fabellas repudiare, eum ad recteque voluptatum. Sumo eros no sit, eu mel errem iisque contentiones. Tota primis deserunt quo cu, eligendi repudiandae mei et.</article>
             </header>
             <section class="article-section">
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <article class="article"></article>
-                <a class="more-articles" href="#"></a>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
+                <article class="article">Lorem ipsum dolor sit amet, novum percipitur ea vel. Usu te utroque insolens, verear atomorum periculis ei quo, ei qui vero tincidunt. Option docendi vis cu, zril moderatius dissentiunt te mel. Te duo latine iuvaret delicatissimi, nam eu enim nusquam. Iusto scriptorem suscipiantur nam ei, alii laboramus ea per. Nam porro meliore at, ex mel nihil audire. Eos ea legere menandri splendide, ut eum zril constituto conclusionemque.</article>
             </section>
         </section>
     </main>
-    <footer id="footer">
+    <footer class="low" id="footer">
         <section id="footer-topics">
             <header id="footer-header">
                 <h2 id="footer-h2"></h2>

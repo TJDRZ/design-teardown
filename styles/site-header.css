@@ -1,0 +1,53 @@
+/* Site Header */
+#site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#site-logo>img {
+    width: 12rem;
+    max-height: 7rem;
+}
+
+#site-nav {
+    display: flex;
+    padding: 1.5rem;   
+}
+
+#site-nav>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+#site-nav>ul>li>a {
+    text-decoration: none;
+    color: black
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: dotted black 0.2rem;
+    border-radius: 0.5rem;
+}
+
+#search-img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+#search-input {
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+}
