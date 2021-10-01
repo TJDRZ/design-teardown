@@ -1,0 +1,26 @@
+/* Topic Header */
+#topic-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+}
+
+#topic-nav {
+  display: flex;
+  padding: 1.5rem;
+}
+
+#topic-nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+#topic-nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
