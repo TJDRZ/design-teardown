@@ -1,9 +1,9 @@
 /* Global */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-    line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 1.5rem;
 }
